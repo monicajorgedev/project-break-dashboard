@@ -1,0 +1,23 @@
+.contain-clock {
+    background-color: rgba(0, 0, 0, 0.146);
+    border-radius: 15px;
+    width: 450px;
+    height: 120px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    color: #faf0e6;
+    align-items: center;
+}
+
+.contain-clock #hour {
+    font-size: 50px;
+    color: #faf0e6a2;
+    margin-bottom: 10px
+} 
+
+.contain-clock #date {
+    font-size: 20px;
+    color: #faf0e6a2;
+    margin-bottom: 20px;
+} 
