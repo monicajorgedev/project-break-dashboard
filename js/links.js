@@ -26,9 +26,12 @@ const removelink = (i)=> {
 }
 
 btnLink.addEventListener("click", ()=> {
-    //if(inputName.value !== "" && inputUrl.value !== ""){
-        //if(inputUrl.value.includes("https://") === true){
-        const link = {
+    if(inputName.value === "" || inputUrl.value === ""){
+        return window.alert("Introduce Nombre de enlace y URL")
+    } 
+    if(!inputUrl.value.startsWith("https://")){
+        return window.alert("Introduce una URL completa")
+    } const link = {
         name: inputName.value,
         url: inputUrl.value, 
         }
@@ -38,8 +41,6 @@ btnLink.addEventListener("click", ()=> {
         createTemplete()
         inputName.value = ""
         inputUrl.value = ""
-        //} window.alert("Introduce una URL completa")
-    //} window.alert("Introduce Nombre de enlace y URL")
 })
 
 

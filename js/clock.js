@@ -19,7 +19,7 @@ const dateAndHour = () => {
     date.innerHTML = nowDate
     hour.innerHTML = nowHour
 
-    const numHour = new Date().getDate()
+    const numHour = new Date().getHours()
 
     if (numHour >= 0 && numHour < 7) {
         textClock.textContent = ceroSiete;
