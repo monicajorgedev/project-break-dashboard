@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/links.css">
+    <link rel="stylesheet" href="../css/clock.css">
+    <link rel="stylesheet" href="../css/weather.css">
+    <link rel="stylesheet" href="../css/password.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <header>
+    </header>
+    <main class="main">
+        <div class="left">
+            <section class="section-links">
+                <div class="container-links">
+                    <h1>Añade tu enlace de interés <img class="icon" src="../assets/img/enlace.png"/></h1>
+                    <div class="contain-links">
+                        <div>
+                            <input id="input-name" type="text" placeholder="Nombre de tu enlace" required>
+                            <input id="input-url" type="url" placeholder="Pega aquí la URL" required>
+                        </div>
+                        <button id="btn-link">Añadir enlace</button>
+                        <ul id="list"></ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="right">
+            <section class="section-clock">
+                <div class="container-clock">
+                    <div class="contain-clock">
+                        <div id="hour"></div>
+                        <div id="date"></div>
+                        <p id="text-clock" hidden></p>
+                    </div>
+                </div>
+            </section>
+            <section class="section-weather">
+                <div class="container-weather">
+                    <div id="contain-weather"> 
+                        <div id="fallo"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-password">
+                <div class="container-password">
+                    <h1>Crea tu contraseña segura <img class="icon" src="../assets/img/candado.png"/></h1>
+                    <div class="contain-password">
+                        <div>
+                            <label for="number-characters">Número de caracteres de la Contraseña</label>
+                            <input id="number-characters" type="number" min="12" max="50">
+                        </div>
+                        <button id="get-password">Generar Contraseña</button>
+                        <div id="password-result">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="links-footer">
+            <nav>
+                <a href="../html/clock.html"><img class="icon" src="../assets/img/reloj.png"/></a>
+                <a href="../html/password.html"><img class="icon" src="../assets/img/candado.png"/></a>
+                <a href="../html/links.html"><img class="icon" src="../assets/img/enlace.png"/></a>
+                <a href="../html/weather.html"><img class="icon" src="../assets/img/nube.png"/></a>
+            </nav>
+        </div>
+    </footer>
+<script src="../js/background.js"></script>
+<script src="../js/links.js"></script>
+<script src="../js/clock.js"></script>
+<script src="../js/weather.js"></script>
+<script src="../js/password.js"></script>
+</body>
+</html>

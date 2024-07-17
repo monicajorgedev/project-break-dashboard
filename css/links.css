@@ -1,5 +1,5 @@
 
-.container {
+.container-links {
     top: 25%;
     background-color: transparent;
 }
@@ -22,7 +22,7 @@
 .contain-links input::placeholder{
     padding: 10px;
 }
-.contain-links #btnLink{
+.contain-links #btn-link{
     background-color: #3488d1;
     color: #faf0e6;
     font-size: 16px;

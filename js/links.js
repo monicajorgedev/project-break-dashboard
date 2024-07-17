@@ -1,7 +1,7 @@
 const list = document.getElementById("list")
-const inputName = document.getElementById("inputName")
-const inputUrl = document.getElementById("inputUrl")
-const btnLink = document.getElementById("btnLink")
+const inputName = document.getElementById("input-name")
+const inputUrl = document.getElementById("input-url")
+const btnLink = document.getElementById("btn-link")
 
 
 let arrlinks = [];

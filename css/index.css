@@ -45,3 +45,58 @@ table {
 }
 
 /* */
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.icon {
+    filter: invert(91%) sepia(2%) saturate(2033%) hue-rotate(340deg) brightness(110%) contrast(90%); 
+	padding: 0px 10px;
+}
+h1 {
+    color: #faf0e6;
+    font-size: 30px;
+    padding: 20px 0px;
+    display: flex;
+    gap: 10px;
+}
+
+.links-footer {
+    border-bottom: 1px solid #faf0e6;
+    display: flex;
+    justify-content: start;
+    min-width: 50%;
+    gap: 10px;
+    padding: 10px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.section-links {
+	position: absolute;
+    top: 15%;
+    left: 5%;
+}
+
+.section-clock {
+	position: absolute;
+    top: 5%;
+    right: 5%;
+}
+.contain-clock {
+	background-color: transparent;
+}
+.section-weather {
+	position: absolute;
+    top: 25%;
+    right: 5%;
+}
+.section-password {
+	position: absolute;
+    top: 60%;
+    right: 5%;
+}

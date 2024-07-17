@@ -52,10 +52,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    transition: 0ms;
 }
 .icon {
     filter: invert(91%) sepia(2%) saturate(2033%) hue-rotate(340deg) brightness(110%) contrast(90%); 
+    padding: 0px 10px;
 }
 .go-home{
     padding: 20px;

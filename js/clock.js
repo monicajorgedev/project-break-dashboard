@@ -1,7 +1,7 @@
 
 const hour = document.getElementById("hour")
 const date = document.getElementById("date")
-const textClock = document.getElementById("textClock") 
+const textClock = document.getElementById("text-clock") 
 
 const ceroSiete = "Es hora de descansar. Apaga y sigue mañana"
 const sieteDoce = "Buenos días, desayuna fuerte y a darle al código"
