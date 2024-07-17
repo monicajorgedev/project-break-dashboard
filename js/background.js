@@ -3,7 +3,7 @@ const getRandomNumber = (min, max) =>{
 }
 
 const changeBackground = ()=> {
-    return document.body.style.backgroundImage = `url(../assets/img/background/${getRandomNumber(1,12)}.jpg)`
+    return document.body.style.backgroundImage = `url(./assets/img/background/${getRandomNumber(1,12)}.jpg)`
 }
 changeBackground()
 setInterval(changeBackground,15000)
