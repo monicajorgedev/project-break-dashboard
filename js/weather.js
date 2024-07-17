@@ -14,7 +14,7 @@ fetch(`${endPoint}`)
       <p>${data.current.condition.text}</p>
       <div class="condition-now">
         <img src="${data.current.condition.icon}"/>
-        <div class="temperature">${data.current.temp_c}<img src="../assets/img/termometro.png"/></div>
+        <div class="temperature">${data.current.temp_c}<img src="./assets/img/termometro.png"/></div>
         <ul class="list">
           <li>Precipitciones: ${data.current.precip_mm}%</li>
           <li>Humedad: ${data.current.humidity}%</li>
