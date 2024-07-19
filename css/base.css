@@ -56,6 +56,7 @@ body {
 .icon {
     filter: invert(91%) sepia(2%) saturate(2033%) hue-rotate(340deg) brightness(110%) contrast(90%); 
     padding: 0px 10px;
+    cursor: pointer;
 }
 .go-home{
     padding: 20px;
@@ -64,10 +65,12 @@ body {
     color: #faf0e6;
     text-decoration: none;
     font-size: 22px;
+    cursor: pointer;
 }
 .go-home img {
     margin-right: 10px;
     width: 30px;
+    cursor: pointer;
 }
 
 .container {

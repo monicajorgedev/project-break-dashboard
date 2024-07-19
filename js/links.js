@@ -10,7 +10,7 @@ const createTemplete = ()=>{
     list.innerHTML = ""
     arrlinks = JSON.parse(localStorage.getItem("links"))
     arrlinks.forEach((link, i) => {
-        const template = `<li><a href="${link.url}" target="_blank">${link.name}</a><button class="btnClose"id="btnClose-${i}">x</button></li>`
+        const template = `<li><img src=${link.icon} alt="icono"><a href="${link.url}" target="_blank">${link.name}</a><button class="btnClose"id="btnClose-${i}">x</button></li>`
         list.insertAdjacentHTML("beforeend", template)
         const btnClose = document.getElementById(`btnClose-${i}`)
         btnClose.addEventListener("click", ()=>{
@@ -34,8 +34,8 @@ btnLink.addEventListener("click", ()=> {
     } const link = {
         name: inputName.value,
         url: inputUrl.value, 
+        icon: `"https://www.google.com/s2/favicons?domain=${inputUrl.value}"`
         }
-        console.log(arrlinks)
         arrlinks.push(link) 
         localStorage.setItem("links", JSON.stringify(arrlinks))
         createTemplete()
@@ -46,5 +46,4 @@ btnLink.addEventListener("click", ()=> {
 
 window.addEventListener("load",()=> {
     createTemplete()
-
 })
