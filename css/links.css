@@ -1,6 +1,6 @@
 
 .container-links {
-    top: 25%;
+    margin-top: -200px;
     background-color: transparent;
 }
 .container-links icon {
@@ -8,14 +8,13 @@
 }
 .contain-links {
     width: 480px;
-    height: 120px;
     display: flex;
     flex-direction: column;
 }
 
 .contain-links input {
     font-size: 16px;
-    width: 99%;
+    width: calc(100% - 10px);
     height: 40px;
     border-radius: 5px;
     border: none;
@@ -70,4 +69,16 @@
     font-size: 16px;
     padding: 5px 10px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    .container-links {
+        max-width: 350px;
+    }
+    .contain-links {
+        width: 100%;
+    }
+    .container-links .icon {
+        height: 35px;
+    }
 }

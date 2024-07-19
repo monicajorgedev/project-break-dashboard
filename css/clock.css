@@ -2,7 +2,6 @@
     background-color: rgba(0, 0, 0, 0.397);
     border-radius: 15px;
     width: 450px;
-    height: 100%;
     padding: 30px 20px;
     display: flex;
     flex-direction: column;
@@ -21,3 +20,9 @@
     color: #faf0e6a2;
     margin-bottom: 20px;
 } 
+
+@media screen and (max-width: 1200px) {
+    .contain-clock {
+        max-width: 350px;
+    }
+}

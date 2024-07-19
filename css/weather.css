@@ -1,8 +1,7 @@
 #contain-weather {
     background-color: #00000025;
     border-radius: 15px;
-    width: 450px;
-    height: 230px;
+    max-width: 450px;
     padding: 20px 20px;
     display: flex;
     flex-direction: column;
@@ -53,4 +52,10 @@
     align-items: center;
     font-size: 16px;
     padding-top: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    #contain-weather {
+        max-width: 350px;
+    }
 }
