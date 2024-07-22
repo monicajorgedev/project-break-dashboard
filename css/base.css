@@ -101,8 +101,18 @@ a .icon {
 }
 
 @media screen and (max-width: 1200px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        padding-bottom: 200px;
+    }
+    footer .links-footer {
+        position: fixed;
+        bottom: 50px;
+        background-color: black;
+    }
     body {
-        background-position: center;
         background-size: contain;
         background-color: black;
     }

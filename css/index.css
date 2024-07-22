@@ -104,17 +104,49 @@ main {
     main {
         flex-direction: column;
         align-items: center;
-        gap: 100px;
+        gap: 50px;
         padding-bottom: 200px;
     }
-    .links-footer {
+    footer .links-footer {
         position: fixed;
+        bottom: 50px;
+        background-color: black;
     }
     body {
-        background-position: center;
+        width: 100%;
         background-size: contain;
         background-color: black;
     }
-    
+    .left {
+        display: flex;
+        
+        align-items: center;
+        width: 80%;
+    }
+    .right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding-top: 50px;
+        width: 80%;
+    }
+    .container-weather {
+        max-width: 300px;
+    }
+    .container-weather #contain-weather {
+      padding: 0px;
+    }
+    .container-weather #contain-weather .condition-now {
+        padding: 0px;
+        gap: 0px;
+    }
+    #contain-weather .temperature{
+        font-size: 30px;
+    }
+    #contain-weather .temperature img{
+        font-size: 10px;
+    }
+   
 }
 

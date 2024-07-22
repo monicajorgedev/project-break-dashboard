@@ -55,7 +55,26 @@
 }
 
 @media screen and (max-width: 1200px) {
+    .container {
+        margin-top: 200px;
+    }
     #contain-weather {
-        max-width: 350px;
+        max-width: 300px;
+    }
+    .container-weather {
+        max-width: 300px;
+    }
+    .container-weather #contain-weather {
+      padding: 0px;
+    }
+    .container-weather #contain-weather .condition-now {
+        padding: 0px;
+        gap: 0px;
+    }
+    #contain-weather .temperature{
+        font-size: 30px;
+    }
+    #contain-weather .temperature img{
+        font-size: 10px;
     }
 }

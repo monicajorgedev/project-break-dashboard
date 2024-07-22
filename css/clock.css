@@ -23,6 +23,9 @@
 
 @media screen and (max-width: 1200px) {
     .contain-clock {
-        max-width: 350px;
+        max-width: 300px;
+    }
+    .container {
+        margin-top: 200px;
     }
 }

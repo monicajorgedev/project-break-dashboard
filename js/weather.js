@@ -1,5 +1,6 @@
 const endPoint = "https://api.weatherapi.com/v1/forecast.json?key=66cc6131cf334c18b3595312241207&q=Segovia&aqi=no"
 
+const containWeather = document.getElementById("contain-weather")
 
 fetch(`${endPoint}`)
     .then((response) => {
@@ -24,9 +25,8 @@ fetch(`${endPoint}`)
         <ul id="condition-hours">
         </ul>
       `
-      const containWeather = document.getElementById("contain-weather")
+      
       containWeather.innerHTML = templete
-
       const conditionHours = document.getElementById("condition-hours")
 
       const hours = data.forecast.forecastday[0].hour
