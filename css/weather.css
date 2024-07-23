@@ -54,7 +54,7 @@
     padding-top: 10px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 550px) {
     .container {
         margin-top: 200px;
     }
@@ -65,12 +65,20 @@
         max-width: 300px;
     }
     .container-weather #contain-weather {
-      padding: 0px;
+      padding: 10px;
     }
     .container-weather #contain-weather .condition-now {
         padding: 0px;
         gap: 0px;
     }
+    #contain-weather .temperature{
+        display: flex;
+        font-size: 26px;
+    }
+    #contain-weather .temperature img{
+        height: 20px;
+    }
+    
     #contain-weather .temperature{
         font-size: 30px;
     }

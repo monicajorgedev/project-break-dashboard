@@ -100,7 +100,7 @@ main {
     height: 80px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
     main {
         flex-direction: column;
         align-items: center;
@@ -109,7 +109,9 @@ main {
     footer .links-footer {
         position: fixed;
         bottom: 40px;
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.28);
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
     }
     body {
         width: 100%;
@@ -118,7 +120,7 @@ main {
     }
     .left {
         display: flex;
-        margin-top: 50px;
+        margin-top: 80px;
         align-items: center;
         width: 80%;
     }
@@ -149,3 +151,87 @@ main {
    
 }
 
+
+@media screen and (max-width: 1200px) and (min-width: 800px) {
+    
+    footer .links-footer {
+        position: fixed;
+        right: 500px;
+        bottom: 10px;
+        justify-content: end;
+        background-color: rgba(0, 0, 0, 0.28);
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+    body {
+        width: 100%;
+        background-size: cover;
+        background-color: black;
+    }
+    body main .left {
+        display: inherit;
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0px;
+    }
+    .right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        margin-right: 20px;
+        width: 80%;
+    }
+    .container-clock {
+        position: absolute;
+        left: 70px;
+        top: 30px;
+    }
+    .container {
+        margin-top: 200px;
+    }
+    .container-links {
+        max-width: 350px;
+    }
+    .contain-links {
+        width: 100%;
+    }
+    .container-links .icon {
+        height: 35px;
+    }
+    .container-weather {
+        max-width: 350px;
+    }
+    .container-weather #contain-weather {
+        padding: 20px;
+    }
+    .container-weather #contain-weather .condition-now {
+        padding: 0px;
+        gap: 0px;
+    }
+    #contain-weather .temperature{
+        font-size: 30px;
+    }
+    #contain-weather .temperature img{
+        font-size: 10px;
+    }
+    .container-password {
+        max-width: 350px;
+    }
+    .contain-password {
+        width: calc(100% - 40px);
+    }
+    .container-password .icon {
+        height: 35px;
+    }
+    .container h1 {
+        gap: 0px;
+    }
+    .container {
+        margin-top: 200px;
+    }
+
+
+}
