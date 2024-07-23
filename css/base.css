@@ -107,7 +107,9 @@ a .icon {
     footer .links-footer {
         position: fixed;
         bottom: 50px;
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.28);
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
     }
     body {
         background-size: contain;
