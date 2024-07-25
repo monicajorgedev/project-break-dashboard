@@ -21,7 +21,6 @@ const createTemplate = ()=>{
     })
 }
 
-
 const removelink = (i)=> {
     arrlinks.splice(i,1)
     localStorage.setItem("links", JSON.stringify(arrlinks))

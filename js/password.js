@@ -8,35 +8,33 @@ const numeros = "0123456789"
 const simbolos = "!@#$%^&*()-_=+"
 const characters = mayusculas + minusculas + numeros + simbolos
 
-let password = ""
 
 const randomNumber = (min, max) =>{
     return Math.floor(Math.random()*(max-min) + min)
 }
 
 const getCharacter = (string) => {
-    return password += string[randomNumber(1,string.length)]
+    return  string[randomNumber(1,string.length)]
 }
 
 const getLastCharacters = (number) => {
-    const characters = mayusculas + minusculas + numeros + simbolos
     let lastPassword = ""
     for(let i = 4; i < number; i++){
-        lastPassword = getCharacter(characters)
+        lastPassword += getCharacter(characters)
     }return lastPassword
 }
 
 getPassword.addEventListener("click",() => {
-    password = ""
+    let password = ""
     const passwordLength = numberCharacters.value
     if(passwordLength < 12 || passwordLength > 50) {
         return window.alert("Introduce un número entre 12 y 50")
     }
-    getCharacter(mayusculas)
-    getCharacter(minusculas)
-    getCharacter(numeros)
-    getCharacter(simbolos)
-    getLastCharacters(passwordLength)
+    password += getCharacter(mayusculas)
+    password += getCharacter(minusculas)
+    password += getCharacter(numeros)
+    password += getCharacter(simbolos)
+    password += getLastCharacters(passwordLength)
     passwordResult.innerHTML = `<p>Contraseña Generada:</p><span>${password}</span>`
 })
 
